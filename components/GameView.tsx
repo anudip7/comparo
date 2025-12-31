@@ -206,7 +206,7 @@ const GameView: React.FC<Props> = ({ pair, onAnswer, onLoadError, currentStep, t
       {/* Full Inspection Modal */}
       {fullView && (
         <div 
-          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-2xl animate-in fade-in duration-300 flex flex-col"
+          className="fixed overflow-hidden inset-0 z-[100] bg-black/95 backdrop-blur-2xl animate-in fade-in duration-300 flex flex-col"
           onClick={() => setFullView(null)}
         >
           <div className="flex justify-between items-center p-6 shrink-0">
@@ -227,7 +227,9 @@ const GameView: React.FC<Props> = ({ pair, onAnswer, onLoadError, currentStep, t
             />
           </div>
           <div className="p-8 text-center">
+            <p className="text-red-400 pb-2 font-bold uppercase tracking-[0.3em] text-[12px]">No pixel peeping!</p>
             <p className="text-neutral-500 font-bold uppercase tracking-[0.3em] text-[10px]">Tap anywhere to close inspection</p>
+            
           </div>
         </div>
       )}
