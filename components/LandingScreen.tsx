@@ -19,8 +19,12 @@ const LandingScreen: React.FC<Props> = ({ onStart }) => {
         SHOT ON <span className="text-blue-500 not-italic">WHAT?</span>
       </h1>
       
-      <p className="max-w-md md:max-w-2xl text-base md:text-xl text-neutral-500 mb-12 leading-relaxed px-4">
+      <p className="max-w-md md:max-w-2xl text-base md:text-xl text-neutral-500 mb-6 leading-relaxed px-4">
         Can you spot the difference between <span className="text-white font-bold italic">computational photography</span> and a <span className="text-white font-bold italic">full-frame sensor?</span>
+      </p>
+
+      <p className="max-w-md md:max-w-2xl text-base md:text-xl text-neutral-500 mb-10 leading-relaxed px-4">
+       Your challenge is to correctly identify the photo <span className="text-white font-bold italic">Shot on iPhone</span>
       </p>
 
       <div className="flex flex-col space-y-6 w-full max-w-xs md:max-w-sm">

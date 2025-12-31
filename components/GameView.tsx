@@ -135,7 +135,7 @@ const GameView: React.FC<Props> = ({ pair, onAnswer, onLoadError, currentStep, t
         {!revealed && (
           <button 
             onClick={(e) => toggleFullView(e, side)}
-            className="absolute bottom-4 right-4 z-40 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-2.5 rounded-full border border-white/10 transition-all active:scale-90"
+            className="absolute top-4 right-4 z-40 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-2.5 rounded-full border border-white/10 transition-all active:scale-90"
             title="Inspect Full Image"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,10 +162,11 @@ const GameView: React.FC<Props> = ({ pair, onAnswer, onLoadError, currentStep, t
             <span className="text-blue-500 font-black text-xs md:text-sm">{currentStep}</span>
           </div>
           <div>
-            <span className="text-neutral-500 text-[9px] font-bold uppercase tracking-[0.2em] block">Challenge</span>
+            <span className="text-neutral-300 text-[10px] font-bold uppercase tracking-[0.2em] block">Identify the iPhone Shot</span>
             <h2 className="text-xs md:text-sm font-black text-white leading-tight uppercase tracking-widest">{currentStep} of {totalSteps}</h2>
           </div>
         </div>
+        
         <div className="text-right">
           <span className="text-neutral-500 text-[9px] font-bold uppercase tracking-[0.2em] block">Subject</span>
           <h2 className="text-xs md:text-sm font-black text-blue-400 leading-tight uppercase tracking-widest">{pair.category}</h2>
