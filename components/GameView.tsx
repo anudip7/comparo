@@ -162,7 +162,7 @@ const GameView: React.FC<Props> = ({ pair, onAnswer, onLoadError, currentStep, t
             <span className="text-blue-500 font-black text-xs md:text-sm">{currentStep}</span>
           </div>
           <div>
-            <span className="text-neutral-300 text-[10px] font-bold uppercase tracking-[0.2em] block">Identify the iPhone Shot</span>
+            <span className="text-neutral-300 text-[10px] font-bold uppercase tracking-[0.2em] block">Tap on the iPhone Shot</span>
             <h2 className="text-xs md:text-sm font-black text-white leading-tight uppercase tracking-widest">{currentStep} of {totalSteps}</h2>
           </div>
         </div>
